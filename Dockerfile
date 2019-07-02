@@ -25,6 +25,7 @@ RUN set -eux; \
 		curl \
 		dirmngr \
 		gnupg \
+		lib32z1 \
 		wget \
 	; \
 	rm -rf /var/lib/apt/lists/*

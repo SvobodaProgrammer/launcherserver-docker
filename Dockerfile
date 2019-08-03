@@ -19,7 +19,6 @@ RUN set -eux; \
 		*) echo >&2 "error: unsupported architecture: $dpkgArch" ;; \
 	esac; \
 	\
-	savedAptMark="$(apt-mark showmanual)"; \
 	apt-get update; \
 	apt-get install -y --no-install-recommends \
 		curl \
